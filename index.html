@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Where in the World</h1>
+    </header>
+
+    <div class="coutries-page">
+      <div class="search-container">
+        <input
+          type="text"
+          name=""
+          id="search"
+          placeholder="Search for a country"
+          value=""
+        />
+        <select name="filter" id="filter">
+          <option value="">Filter by region</option>
+          <option value="africa">Africa</option>
+          <option value="americas">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <div class="countries"></div>
+    </div>
+
+    <div class="details-page hide">
+      <div class="go-back">
+        <button class="go-back">Go Back</button>
+      </div>
+
+      <div class="container">
+        <img class="flag-container2" src="" alt="" width="40%" height="80%" />
+        <div class="advanced-details">
+          <h3 class="country-name">Coutry Name</h3>
+          <div class="left-right">
+            <div class="left">
+              <p>Native Name: <span class="native-name"></span></p>
+              <p>Population: <span class="population"></span></p>
+              <p>Region: <span class="region"></span></p>
+              <p>SubRegion: <span class="sub-region"></span></p>
+              <p>Capital: <span class="capital"></span></p>
+            </div>
+            <div class="right">
+              <p>Top Level Domain: <span class="top-level"></span></p>
+              <p>Currencies: <span class="currency"></span></p>
+              <p>Languages: <span class="language"></span></p>
+            </div>
+          </div>
+          <div class="border">
+            <h3>Border countries :</h3>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="getCountryName.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
